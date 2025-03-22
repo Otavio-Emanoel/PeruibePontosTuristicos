@@ -28,4 +28,8 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-text);
+    color: var(--main-white);
+
+    display: flex;
+    flex-direction: column;
 }
