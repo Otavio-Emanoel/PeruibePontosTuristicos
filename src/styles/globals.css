@@ -19,6 +19,7 @@
     --main-white: #F1F1F1;
     --main-black: #111111;
     --modal-color: #202020;
+    --text-color: #3F3F46;
 }
 
 /* Configurações globais */
@@ -29,6 +30,7 @@ body {
     box-sizing: border-box;
     font-family: var(--font-text);
     color: var(--main-white);
+    background-color: var(--main-black);
 
     display: flex;
     flex-direction: column;

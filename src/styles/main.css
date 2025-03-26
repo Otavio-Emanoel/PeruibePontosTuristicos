@@ -1,1 +1,56 @@
 /* Conteúdo do Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    width: 100%;
+
+    & .main_about {
+        width: 100%;
+        background-color: var(--main-white);
+        color: var(--text-color);
+        padding: 10px 0 0 10px;
+
+        & .main_about-title {
+            font-size: 40px;
+            font-family: var(--font-title);
+            text-align: center;
+        }
+
+        & .main_about_content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            justify-content: space-around;
+
+            &>div {
+
+
+                & p {
+                    font-family: var(--font-text);
+                    width: 770px;
+                    font-size: 25px;
+                    text-align: justify;
+                    text-indent: 40px;
+                }
+            }
+
+            & figure {
+
+
+                & img {}
+
+                & figcaption {
+                    text-align: center;
+                }
+
+            }
+
+        }
+
+    }
+
+}

@@ -19,7 +19,7 @@ header {
             & img {
                 padding: 0 0 0 20px;
             }
-            
+
             & strong {
                 font-size: 55px;
                 color: #fff;
@@ -35,12 +35,12 @@ header {
                 }
             }
         }
-        
+
         & .header-image {
             width: 100%;
             height: inherit;
 
-            & > img {
+            &>img {
                 width: 100%;
             }
 
@@ -56,9 +56,9 @@ header {
 
                 user-select: none;
             }
-            
+
         }
-        
+
     }
 
     & .header_navbar {
@@ -85,5 +85,5 @@ header {
         }
 
     }
-    
+
 }
