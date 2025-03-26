@@ -41,7 +41,9 @@ main {
             & figure {
 
 
-                & img {}
+                & img {
+                    width: 300px;
+                }
 
                 & figcaption {
                     text-align: center;
