@@ -23,6 +23,19 @@
     --main-black: #111111;
     --modal-color: #202020;
     --text-color: #3F3F46;
+    --footer-color: #0b0b0b;
+    --modal-bg: #202020;
+    --modal-title: #F1F1F1;
+    --modal-close: #F1F1F1;
+    --modal-close-hover: #F1F1F1;
+    --modal-link: #F1F1F1;
+    --modal-link-hover: #F1F1F1;
+    --carousel-bg: #202020;
+    --carousel-title: #F1F1F1;
+    --carousel-text: #F1F1F1;
+    --carousel-button: #F1F1F1;
+    --carousel-button-hover: #F1F1F1;
+    --carousel-button-bg: #F1F1F1;
 }
 
 /* Configurações globais */

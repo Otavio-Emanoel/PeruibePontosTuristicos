@@ -10,7 +10,6 @@
     <meta name="description" content="Site com os Principais Pontos Turísticos da Cidade de Peruíbe...">
     <meta name="keywords" content="Peruíbe, São Paulo, Pontos Turísticos, Férias">
     <link rel="stylesheet" href="./src/styles/globals.css">
-    <script src="./src/scripts/main.js" defer></script>
     <title>Pontos Turísticos</title>
 </head>
 
@@ -21,7 +20,7 @@
                 <img src="./src/assets/brasao.png" alt="Peruíbe">
                 <div class="header-top-links">
                     <strong class="fa fa-user"></strong>
-                    <strong class="fa fa-github"></strong>
+                    <strong class="fa fa-github" id="abrir-modal-devs"></strong>
                 </div>
             </div>
             <div class="header-image">
@@ -85,25 +84,25 @@
                 <div class="card-caption">Ruinas do Abarebebê</div>
                 <a href="./src/pages/ruinas-abarebebe.html"><button class="card-button">Conheça</button></a>
             </div>
-
+            
             <div class="card">
                 <img src="./src/assets/lugares/barra-do-una.jpeg" alt="barra-do-una" />
                 <div class="card-caption">Barra do Una</div>
                 <a href="./src/pages/barra-do-una.html"><button class="card-button">Conheça</button></a>
             </div>
-
+            
             <div class="card">
                 <img src="./src/assets/lugares/cachoeira-do-paraiso.jpeg" alt="Cachoeira do Paraíso" />
                 <div class="card-caption">Cachoeira do Paraíso</div>
                 <a href="./src/pages/cachoeira-do-paraiso.html"><button class="card-button">Conheça</button></a>
             </div>
-
+            
             <div class="card">
                 <img src="./src/assets/lugares/cachoeira-rio-do-ouro.jpeg" alt="Cachoeira Rio do Ouro" />
                 <div class="card-caption">Cachoeira Rio do Ouro</div>
                 <a href="./src/pages/cachoeira-do-rio-do-ouro.html"><button class="card-button">Conheça</button></a>
             </div>
-
+            
             <div class="card">
                 <img src="./src/assets/lugares/castelinho.jpeg" alt="Castelinho" />
                 <div class="card-caption">Castelinho</div>
@@ -115,25 +114,25 @@
                 <div class="card-caption">Estação Ecológica Juréia Itatins</div>
                 <a href="./src/pages/estacao-ecologica-jureia.html"><button class="card-button">Conheça</button></a>
             </div>
-
+            
             <div class="card">
                 <img src="./src/assets/lugares/ilha-guarau.jpeg" alt="Ilha do Guaraú" />
                 <div class="card-caption">Ilha do Guaraú</div>
                 <a href="./src/pages/ilha-do-guarau.html"><button class="card-button">Conheça</button></a>
             </div>
-
+            
             <div class="card">
                 <img src="./src/assets/lugares/mirante-da-torre.jpeg" alt="Mirante da Torre" />
                 <div class="card-caption">Mirante da Torre</div>
                 <a href="./src/pages/mirante-da-torre.html"><button class="card-button">Conheça</button></a>
             </div>
-
+            
             <div class="card">
                 <img src="./src/assets/lugares/praia-costao.jpeg" alt="Praia do Costão" />
                 <div class="card-caption">Praia do Costão</div>
                 <a href="./src/pages/praia-do-costao.html"><button class="card-button">Conheça</button></a>
             </div>
-
+            
             <div class="card">
                 <img src="./src/assets/lugares/praia-desertinha.jpeg" alt="Praia Desertinha" />
                 <div class="card-caption">Praia Desertinha</div>
@@ -145,41 +144,97 @@
                 <div class="card-caption">Praia do Caramboré</div>
                 <a href="./src/pages/praia-do-carambore.html"><button class="card-button">Conheça</button></a>
             </div>
-
+            
             <div class="card">
                 <img src="./src/assets/lugares/praia-do-centro.jpeg" alt="Praia do Centro" />
                 <div class="card-caption">Praia do Centro</div>
                 <a href="./src/pages/praia-do-centro.html"><button class="card-button">Conheça</button></a>
             </div>
-
+            
             <div class="card">
                 <img src="./src/assets/lugares/prainha.jpeg" alt="Praínha" />
                 <div class="card-caption">Praínha</div>
                 <a href="./src/pages/prainha.html"><button class="card-button">Conheça</button></a>
             </div>
-
-
+            
+            
         </div>
     </main>
+
     <footer>
         <div class="footer_content">
             <div class="footer_content_location">
-
+                <p><i class="fa fa-map-marker"></i> Peruíbe, SP 11750-000.</p>
+                <p><i class="fa fa-graduation-cap"></i> Etec de Peruíbe.</p>
+                <p><i class="fa fa-envelope"></i> otabruc6@gmail.com</p>
             </div>
             <div class="footer_content_dev">
-
+                <h3>Sobre os desenvolvedores</h3>
+                <p>Otavio Emanoel de Lima, Desenvolvedor web FullStack.</p>
+                <p>Maria Priscila de Souza Bueno,</p>
+                <p>José Paulo da Gama Sobrinho,</p>
+                <p>José Eduardo Carvalho Nóbrega,</p>
+                <p>Juliane Martins Gonçalves Jirardi,</p>
+                <p>Giulia de Almeida Oliveira,</p>
+                <p>Beatris Cecília de Sousa,</p>
+                <p>Matheus Pacífico.</p>
             </div>
         </div>
     </footer>
 
-    <div class="modalbg">
+    <div class="modalbg" style="display: none;">
         <div class="modal">
-            <div class="modal_header"></div>
-            <div class="modal_devs"></div>
+            <div class="modal_header">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="modal_header_img">
+                <h2>Desenvolvedores</h2>
+                <button class="close_modal">&times;</button>
+            </div>
+            <div class="modal_devs">
+                <div class="dev">
+                    <img src="./src/assets/integrantes/otavio.jpeg" alt="Otavio Emanoel">
+                    <p>Otavio Emanoel</p>
+                    <a href="https://github.com/otavio-emanoel" target="_blank"><i class="fa fa-external-link"></i></a>
+                </div>
+                <div class="dev">
+                    <img src="./src/assets/integrantes/priscila.jpeg" alt="Priscila">
+                    <p>Priscila</p>
+                    <a href="https://github.com/Mpripri" target="_blank"><i class="fa fa-external-link"></i></a>
+                </div>
+                <div class="dev">
+                    <img src="./src/assets/integrantes/josePaulo.jpeg" alt="Jose Paulo da Gama Sobrinho">
+                    <p>Jose Paulo da Gama Sobrinho</p>
+                    <a href="https://github.com/Maellzx7" target="_blank"><i class="fa fa-external-link"></i></a>
+                </div>
+                <div class="dev">
+                    <img src="./src/assets/integrantes/joseEduardo.jpeg" alt="José Eduardo Carvalho Nóbrega">
+                    <p>José Eduardo Carvalho Nóbrega</p>
+                    <a href="https://github.com/JoseEduSkibidi" target="_blank"><i class="fa fa-external-link"></i></a>
+                </div>
+                <div class="dev">
+                    <img src="./src/assets/integrantes/juliane.jpg" alt="Juliane Martins Gonçalves Jirardi">
+                    <p>Juliane Martins Gonçalves Jirardi</p>
+                    <a href="" target="_blank"><i class="fa fa-external-link"></i></a>
+                </div>
+                <div class="dev">
+                    <img src="./src/assets/integrantes/giulia.jpeg" alt="Giulia de Almeida Oliveira">
+                    <p>Giulia de Almeida Oliveira</p>
+                    <a href="https://github.com/liajapa" target="_blank"><i class="fa fa-external-link"></i></a>
+                </div>
+                <div class="dev">
+                    <img src="./src/assets/integrantes/beatris.jpeg" alt="Beatris Cecília de Sousa">
+                    <p>Beatris Cecília de Sousa</p>
+                    <a href="https://github.com/ominitrixxy" target="_blank"><i class="fa fa-external-link"></i></a>
+                </div>
+                <div class="dev">
+                    <img src="./src/assets/integrantes/pacifico.jpg" alt="Matheus Pacífico Gonçalves">
+                    <p>Matheus Pacífico Gonçalves</p>
+                    <a href="https://github.com/pacificzin21" target="_blank"><i class="fa fa-external-link"></i></a>
+                </div>
+            </div>
         </div>
     </div>
-
-
+    
+    <script src="./src/scripts/main.js" defer></script>
 </body>
 
 </html>

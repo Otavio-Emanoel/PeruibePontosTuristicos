@@ -1,0 +1,41 @@
+/* Responsividade */
+@media (max-width: 768px) {
+    footer {
+        padding: 1.5rem 1rem;
+    }
+
+    .footer_content {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer_content_location,
+    .footer_content_dev {
+        flex: none;
+        min-width: 100%;
+    }
+
+    .footer_content_dev p {
+        margin-left: 0; 
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 1rem;
+    }
+
+    .footer_content_location i {
+        font-size: 1rem; 
+    }
+
+    .footer_content_dev h3 {
+        font-size: 1.2rem; 
+    }
+
+    .footer_content_location p,
+    .footer_content_dev p {
+        font-size: 0.8rem; 
+    }
+}
