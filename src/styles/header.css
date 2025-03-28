@@ -38,7 +38,7 @@ header {
 
         & .header-image {
             width: 100%;
-            height: 80dvh;
+            height: 80vh;
             user-select: none;
             background-image: url("../assets/header-photo.png");
             background-size: cover;
