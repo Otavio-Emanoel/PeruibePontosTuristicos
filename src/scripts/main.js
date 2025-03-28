@@ -56,3 +56,26 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const modalProfsOpen = document.querySelector("#abrir-modal-profs");
+    const modalProfs = document.querySelector(".modalbg-profs");
+    const modalProfsClose = document.querySelector(".close_modal_profs");
+
+    // Abrir o modal das professoras
+    modalProfsOpen.addEventListener("click", function () {
+        modalProfs.style.display = "flex";
+    });
+
+    // Fechar o modal das professoras
+    modalProfsClose.addEventListener("click", function () {
+        modalProfs.style.display = "none";
+    });
+
+    // Fechar o modal ao clicar fora dele
+    modalProfs.addEventListener("click", function (e) {
+        if (e.target === modalProfs) {
+            modalProfs.style.display = "none";
+        }
+    });
+});
