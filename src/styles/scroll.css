@@ -1,0 +1,112 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-padding-top: 20px;
+}
+/* Estilização do scroll */
+html::-webkit-scrollbar {
+    width: 10px;
+}
+html::-webkit-scrollbar-track {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-thumb {
+    background: var(--main-white);
+    border-radius: 10px;
+}
+html::-webkit-scrollbar-thumb:hover {
+    background: var(--main-white);
+    border-radius: 10px;
+}
+html::-webkit-scrollbar-thumb:active {
+    background: var(--main-white);
+    border-radius: 10px;
+}
+html::-webkit-scrollbar-corner {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-button {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-button:vertical:decrement {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-button:vertical:increment {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-button:horizontal:decrement {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-button:horizontal:increment {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-corner {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-button {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-button:vertical:decrement {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-button:vertical:increment {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-button:horizontal:decrement {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-button:horizontal:increment {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-corner {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-button {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-button:vertical:decrement {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-button:vertical:increment {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-button:horizontal:decrement {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-button:horizontal:increment {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-corner {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-button {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-button:vertical:decrement {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-button:vertical:increment {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-button:horizontal:decrement {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-button:horizontal:increment {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-corner {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-button {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-button:vertical:decrement {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-button:vertical:increment {
+    background: var(--main-black);
+}
+html::-webkit-scrollbar-button:horizontal:decrement {
+    background: var(--main-black);
+}

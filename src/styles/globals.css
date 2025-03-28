@@ -6,6 +6,7 @@
 @import url('./modal.css');
 @import url('./carousel.css');
 @import url('./cards.css');
+@import url('./scroll.css');
 
 /* Importação de fontes */
 
@@ -37,3 +38,4 @@ body {
     display: flex;
     flex-direction: column;
 }
+

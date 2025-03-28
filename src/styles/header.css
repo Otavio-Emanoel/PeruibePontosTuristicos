@@ -38,30 +38,28 @@ header {
 
         & .header-image {
             width: 100%;
-            height: inherit;
+            height: 80dvh;
             user-select: none;
-            
-            
-            &>img {
-                width: 100%;
-                position: relative;
-                -webkit-user-drag: none;
-            }
+            background-image: url("../assets/header-photo.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             & h1.header-image-text {
-                /* display: flex;
+                display: flex;
                 justify-content: center;
-                align-items: center; */
+                align-items: center;
                 font-family: var(--font-title);
                 text-align: center;
                 font-size: 75px;
                 
                 z-index: 10;
                 
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
 
                 user-select: none;
             }
