@@ -5,26 +5,34 @@ document.addEventListener("DOMContentLoaded", function () {
     const nextBtn = document.querySelector(".next");
 
     let index = 0;
-    const totalImages = images.length;
 
     function updateCarousel() {
-        carousel.style.transform = `translateX(${-index * 500}px)`;
+        const carouselimgWidth = images[0].getBoundingClientRect().width; // Calcula a largura da imagem
+        carousel.style.transform = `translateX(${-index * carouselimgWidth}px)`;
     }
 
     nextBtn.addEventListener("click", function () {
-        index = (index + 1) % totalImages;
+        index = (index + 1) % images.length; // Avança para a próxima imagem
         updateCarousel();
     });
 
     prevBtn.addEventListener("click", function () {
-        index = (index - 1 + totalImages) % totalImages;
+        index = (index - 1 + images.length) % images.length; // Volta para a imagem anterior
+        updateCarousel();
+    });
+
+    window.addEventListener("resize", function () {
+        // Recalcula a posição do carrossel ao redimensionar a janela
         updateCarousel();
     });
 
     setInterval(() => {
-        index = (index + 1) % totalImages;
+        index = (index + 1) % images.length; // Avança automaticamente a cada 5 segundos
         updateCarousel();
     }, 5000);
+
+    // Inicializa o carrossel na posição correta
+    updateCarousel();
 });
 
 document.addEventListener("DOMContentLoaded", function () {
